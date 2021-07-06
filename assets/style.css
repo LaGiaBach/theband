@@ -1,0 +1,231 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+.clear{
+	clear: both;
+}
+.header{
+	height: 46px;
+/*	width: 100%;*/
+	background: #000000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+
+}
+.header .nav{
+	font-family: sans-serif;
+	font-weight: 15px;
+	position: relative;
+	display: inline-block;
+}
+.header .nav > li{
+	/*list-style: none;
+	float: left;*/
+	display: inline-block;
+}
+.header .nav > li > a {	
+	text-decoration: none;
+	color: #ffffff;
+	padding: 0px 24px 0px 24px;
+	line-height: 46px;
+	display: block;
+}
+.header .nav > li:hover > a {
+	background: #ccc;
+	color: #000000;
+}
+ul.sub-nav{
+	width: 170px;
+	background: #ffffff;
+	min-height: 100px;
+	display: none;
+	position:absolute;
+}
+ul.sub-nav /*li*/{
+	list-style: none;
+	box-shadow:0 0 10px rgba(0, 0, 0, 0.3);
+}
+ul.sub-nav li a{
+	color: black;
+	text-decoration: none;
+	display: block;
+/*	border-bottom: 1px solid #000000;*/
+	line-height: 35px;
+	text-indent: 10px;
+}
+ul.sub-nav li a:hover{
+	background: #ccc;
+	color: #000000;
+}
+.header .nav > li:hover ul.sub-nav{
+	display: block;
+}
+.header .search{
+	/*position: absolute;
+	right: 0px;
+	top: 0px;*/
+	float: right;
+	color: #ffffff;
+/*	width: 50px;*/
+	padding: 0 24px;
+	line-height: 46px;
+/*	text-align: center;*/
+	cursor: pointer;
+}
+.header .search:hover{
+	background:#f44336 ;
+}
+.slide {
+	position: relative;
+	background: #B2AAAA;
+	/* chi chiều cao bằng 1/2 chiều rộng từ padding */
+	padding-top: 50%; 
+    margin-top: 46px;
+    background: url('../assets/slider/slider1.jpg') top center / cover no-repeat;
+}
+.slide .text-content{
+	position: absolute;
+	bottom: 48px;
+	color: #fff;
+	width: 100%;
+	text-align: center;
+}
+.slide .text-heading{
+	font-weight: 500;
+	font-size: 24;
+}
+.slide .text-des{
+	font-size: 15;
+	margin-top: 25px;
+}
+#content{
+
+	
+}
+#content  .content-section{
+	width: 800px;
+	padding: 64px 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+#content  .content-section > .section-heading{
+	text-align: center;
+	font-size: 30px;
+	font-weight: 500;
+	letter-spacing: 4px;
+}
+#content  .content-section > .section-sub-heading{
+	text-align: center;
+	font-style: italic;
+	opacity: 0.5;
+	font-size: 15px;
+	margin: 25px
+}
+#content  .content-section > .about-text{
+	font-size: 15px;
+	text-align: justify;
+	line-height: 1.4;
+	font-family: lato,sans-serif;
+	font-weight: 400;
+}
+#content .member-list{
+	margin-top: 48px;
+}
+#content .member-item{
+	float: left;
+/*	width: 33.333333%;*/
+	width: calc(100% / 3);
+	text-align: center;
+
+
+}
+#content .member-name{
+	font-size: 15px;
+
+}
+#content .member-img{
+	margin-top: 15px;
+	width: 154px;
+	border-radius: 4px;
+}
+.tour-section{
+	background: #000000;
+	color: #fff;	
+
+
+}
+#content > .tour-section ul{
+	background: #fff;
+	color: #757575;
+	list-style: none;
+	margin-bottom: 30px;
+
+}
+#content > .tour-section ul li{
+	padding: 10px 16px;
+	border-bottom: 1px solid #ddd;
+}
+#content > .tour-section ul li .sold-out{
+	background: #f44336;
+	color: #fff;
+	padding-left: 8px;
+	padding-right: 8px;
+	margin-left: 16px;
+	text-align: center;
+	display: inline-block;
+	font-size: 15px;
+	line-height: 1.5;
+}
+#content > .tour-section ul li > .tickets{
+	background: #000;
+	float: right;
+	border-radius: 50%;
+	padding-left: 8px;
+	padding-right: 8px;
+	color: #fff;
+	display: inline-block;
+	text-align: center;
+	line-height: 1.5;
+	margin-right: 16px;
+}
+#content > .tour-section  .tour-place-section{
+	margin: 0 -8px;
+}
+#content > .tour-section  .tour-place-section  .tour-place{
+	float: left;
+	width: calc(100% / 3);
+	padding: 0 8px;
+	color: #000;
+}
+#content > .tour-section .tour-place-section   .tour-place > img{
+	width: 100%;
+	vertical-align: middle;
+}
+#content > .tour-section .tour-place-section   .tour-place > .tour-container{
+	background: #FFFFFF;
+	padding: 0.01em 16px;
+}
+#content > .tour-section .tour-place-section   .tour-place > .tour-container p{
+	padding-top: 10px;
+	padding-bottom: 10px;
+} 
+#content > .tour-section .tour-place-section   .tour-place > .tour-container p:nth-child(2){
+	opacity: 0.5;
+}
+#content > .tour-section .tour-place-section   .tour-place > .tour-container p:nth-child(3){
+	line-height: 1.4;
+}
+#content > .tour-section .tour-place-section   .tour-place > .tour-container button{
+	margin-bottom: 25px;
+	display: inline-block;
+	padding: 14px 20px;
+	background: #000;
+	color: #fff;
+	border: none;
+	text-align: center;
+}
